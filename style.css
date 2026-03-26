@@ -6,10 +6,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* para walang hyperlink sa links */
 a{
     text-decoration: none;
 }
 
+
+/* Style para sa body */
 body {
   font-family: "Playwrite NZ Basic", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #fff; 
@@ -27,11 +31,15 @@ body {
 
 }
 
+/* kulay pag night */
 
-body.dark-mode {
+body.gabi {
   background-color: #121212;
-  color: #ccc;
+  color: #333333;
+  
 }
+
+/* paglalagyan ng day and night button */
 
 .navbar {
   padding: 20px;
@@ -45,6 +53,7 @@ body.dark-mode {
   z-index: 1000;
 }
 
+/* tanggal border cursor, bg tsaka display sa daymode tsaka night mode */
 .daymode {
   width: 100px;
   height: 100px;
@@ -54,6 +63,8 @@ body.dark-mode {
   cursor: pointer;
   display: block;
 }
+
+
 
 .nightmode {
   width: 100px;
@@ -65,7 +76,8 @@ body.dark-mode {
 }
 
 
-.profileBox {
+/* Style para profile ko */
+.profileko {
   width: 90%;
   max-width: 600px;
   margin: 200px auto;
@@ -81,23 +93,28 @@ body.dark-mode {
   transition: background-color 0.5s, color 0.5s;
 }
 
-body.dark-mode .profileBox {
+
+
+body.dark-mode .profileko {
   background-color: #222;
   border-color: #444;
   color: #ccc;
 }
 
-.profileName {
+
+.profilenameko {
   font-size: 3em;
   margin-bottom: 20px;
 }
 
-.description {
+
+.profiledescription {
   font-size: 1.4em;
   margin-bottom: 40px;
 }
 
-.profileButtons {
+
+.profile_buttons {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -105,11 +122,7 @@ body.dark-mode .profileBox {
   gap: 30px;
 }
 
-.abouticon {
-  width: 80px;
-  height: 80px;
-  transition: transform 0.3s ease;
-}
+/* Style para sa buttons */
 
 .buttons {
   background: none;
@@ -138,95 +151,110 @@ body.dark-mode .buttons {
 
 
 .buttons:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(0, 132, 255, 0.6);
-  background-color: rgba(0, 132, 255, 0.1);
+    transform: scale(1.1);
+   box-shadow: 0 0 15px rgba(0, 132, 255, 0.6);
+    background-color: rgba(0, 132, 255, 0.1);
 }
 
 .buttons:active {
   transform: scale(0.95);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 
 .abouticon {
   width: 80px;
-  height: 80px;
-  transition: transform 0.3s ease;
+     height: 80px;
+     transition: transform 0.3s ease;
 }
 
 
 .aboutbox {
   display: block;
-  align-items: flex-start;
-  gap: 20px;
+    align-items: flex-start;
+   gap: 20px;
   position: fixed; 
-  top: 50%;
+   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
   width: 80%;
   max-width: 700px;
-  padding: 30px;
+    padding: 30px;
   border: 2px solid rgb(114, 114, 114);
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
   font-family: "Playwrite NZ Basic", Verdana, Geneva, Tahoma, sans-serif;
 }
 body.dark-mode .aboutbox {
   background-color: #222;
-  border-color: #444;
+     border-color: #444;
   color: #ccc;
 }
 #jambol {
    width: 100px;
-  height: 100px;
+   height: 100px;
   border-radius: 50%;
-  float: left;        
+   float: left;        
   margin-right: 15px; 
-  margin-bottom: 10px; 
+   margin-bottom: 10px; 
 }
+
+
 .aboutbox p {
-  text-align: justify;
+   text-align: justify;
   
 }
+
+
 .aboutbox ul {
   text-align: left;
-  list-style: none;
+   list-style: none;
 }
+
+
 .socials img {
   width: 100px;
   height: 100px;
   
 }
+
+
 .socials {
   display: flex;
   align-items: center;
-  flex-direction: row;
+   flex-direction: row;
   justify-content: center;
-} 
-.download {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-}
-#closebutton img {
-   width: 20px;
-  height: 20px;
-}
-#closebutton {
-  display: flex;
-  margin-left: auto;
 }
 
+
+.download {
+   display: inline-block;
+  width: 100px;
+    height: 100px;
+}
+
+
+#closebutton img {
+    width: 20px;
+   height: 20px;
+}
+
+
+#closebutton {
+  display: flex;
+   margin-left: auto;
+}
+
+
 .form {
-  max-width: 500px;
+   max-width: 500px;
   margin: 20px auto;
-  padding: 20px;
+      padding: 20px;
   background-color: #f2f2f2;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -234,14 +262,14 @@ body.dark-mode .aboutbox {
 .form input[type="email"],
 .form textarea {
   width: 100%;
-  padding: 12px 15px;
+     padding: 12px 15px;
   margin: 8px 0;
-  border: 1px solid #ccc;
+     border: 1px solid #ccc;
   border-radius: 8px;
   resize: vertical; 
   font-family: Arial, sans-serif;
   font-size: 14px;
-  box-sizing: border-box;
+     box-sizing: border-box;
   transition: border-color 0.3s;
 }
 
@@ -249,7 +277,7 @@ body.dark-mode .aboutbox {
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
 .form textarea:focus {
-  border-color: #008cff;
+     border-color: #008cff;
   outline: none;
 }
 
@@ -259,7 +287,7 @@ body.dark-mode .aboutbox {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 8px;
+      border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
@@ -268,12 +296,18 @@ body.dark-mode .aboutbox {
 .form button[type="submit"]:hover {
   background-color: #005f99;
 }
+
+
 .aboutbox p{
-  font-size: 1.3em;
+     font-size: 1.3em;
 }
+
+
 .aboutbox ul{
-  font-size: 1.3em;
+      font-size: 1.3em;
 }
+
+
 
 .menu {
     display: flex;
@@ -285,10 +319,10 @@ body.dark-mode .aboutbox {
 .menu button {
     width: 100px;
     height: 100px;
-    background: white;
+       background: white;
     border: 1px solid #ccc;
     border-radius: 8px;
-    display: flex;
+      display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -298,69 +332,73 @@ body.dark-mode .aboutbox {
 
 .menu button img {
     width: 40px;
-    height: 40px;
+     height: 40px;
 }
 
 .popup {
     position: absolute;
     border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
+       padding: 20px;
+     box-sizing: border-box;
     display: none; 
-    min-width: 200px;
+       min-width: 200px;
     min-height: 150px;
     z-index: 1000;
     background: none;       
-    border: none;           
+      border: none;           
     outline: none;         
 }
 
   
 .close-btn {
-    position: absolute;
+     position: absolute;
     top: 8px;
-    right: 8px;
+     right: 8px;
     background: red;
-    color: white;
+      color: white;
     border: none;
-    border-radius: 4px;
+      border-radius: 4px;
     padding: 4px 8px;
     cursor: pointer;
 }
+
+
 .menu button {
-  width: 120px;
+   width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, #008cff, #00c6ff);
+    background: linear-gradient(135deg, #008cff, #00c6ff);
   border: none;
-  border-radius: 16px;
+      border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+    justify-content: center;
   gap: 10px;
-  cursor: pointer;
-  color: white;
+   cursor: pointer;
+   color: white;
   font-weight: bold;
-  font-size: 1.1em;
+   font-size: 1.1em;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
 .menu button img {
   width: 50px;
-  height: 50px;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+   height: 50px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
   transition: transform 0.3s ease;
 }
 .menu button:hover img {
-  animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
 }
 
 .menu button:hover {
-  transform: translateY(-6px) scale(1.05);
+   transform: translateY(-6px) scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  background: linear-gradient(135deg, #00c6ff, #008cff);
+   background: linear-gradient(135deg, #00c6ff, #008cff);
 }
+
+
 
 .menu button:active {
   transform: scale(0.95);
@@ -368,94 +406,112 @@ body.dark-mode .aboutbox {
 }
 
 
-@keyframes pulse {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.2); }
-  100% { transform: scale(1); }
+
+.profilenameko span {
+   display: inline-block;
+   animation: wave 3s infinite;
 }
 
-.profileName span {
-  display: inline-block;
-  animation: wave 3s infinite;
-}
 
-@keyframes wave {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(10deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(-10deg); }
-  100% { transform: rotate(0deg); }
-}
-.profileName {
-  font-size: clamp(1.8rem, 5vw, 3rem);
-  margin-bottom: 20px;
-  animation: bounce 2s, colorCycle 4s infinite;
+
+.profilenameko {
+   font-size: clamp(1.8rem, 5vw, 3rem);
+   margin-bottom: 20px;
+   animation: bounce 2s, colorCycle 4s infinite;
   
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
 
-.description {
+
+.profiledescription {
   font-size: clamp(1rem, 3vw, 1.4rem);
-  margin-bottom: 20px;
+   margin-bottom: 20px;
   overflow: hidden;
-  white-space: nowrap;
+    white-space: nowrap;
   border-right: 3px solid #008cff;
-  animation: typing 3s steps(20, end), blink 0.7s infinite alternate;
+   animation: typing 3s steps(20, end), blink 0.7s infinite alternate;
 }
 
+
+/* animations para sa elements ng profile ko */
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%; }
+   to { width: 100%; }
+}
+
+@keyframes wave {
+   0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+   50% { transform: rotate(0deg); }
+   75% { transform: rotate(-10deg); }
+   100% { transform: rotate(0deg); }
+}
+
+
+@keyframes pulse {
+   0%   { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+   100% { transform: scale(1); }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+   50% { border-color: transparent; }
 }
 
-
+@keyframes bounce {
+   0%, 100% { transform: translateY(0); }
+   50% { transform: translateY(-15px); }
+}
 
 @keyframes colorCycle {
   0% { color: #008cff; }
-  25% { color: #ff008c; }
-  50% { color: #00c6ff; }
+   25% { color: #ff008c; }
+   50% { color: #00c6ff; }
   75% { color: #ffcc00; }
-  100% { color: #008cff; }
+    100% { color: #008cff; }
 }
+
+
 .menu button span {
-  transition: transform 0.3s ease;
+   transition: transform 0.3s ease;
 }
+
+
 
 .menu button:hover span {
-  transform: translateY(-5px);
+   transform: translateY(-5px);
 }
 
+/* para maganda close button */
 .close-btn {
   background: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 50%;
-  width: 32px;
+   width: 32px;
   height: 32px;
-  cursor: pointer;
+     cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    justify-content: center;
+     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
+
+
 .close-btn img {
-  width: 16px;
-  height: 16px;
+    width: 16px;
+   height: 16px;
 }
+
+
 
 .close-btn:hover {
   background: #ff4d4d;
   box-shadow: 0 0 10px rgba(255,0,0,0.6);
 }
+
+
 
 
 body.dark-mode .close-btn {
@@ -469,11 +525,13 @@ body.dark-mode .close-btn:hover {
 }
 
 
+
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* Pag lumiit ng 600 px gawin tong mga to (for mobile phone) */
 
 @media (max-width: 600px) {
 body {
@@ -483,39 +541,45 @@ body {
     gap: 12px;
 }
 
+
 .navbar {
     justify-content: center;
     padding: 6px;
 }
+
 
 .daymode, .nightmode {
     width: 40px;
     height: 40px;
 }
 
-.profileBox {
+
+.profileko {
     margin: 40px auto 15px;
     padding: 10px;
     width: 95%;
 }
 
-.profileName {
-    font-size: 1.4rem; 
-}
 
-.description {
+.profilenameko {
+    font-size: 1.4rem; 
+  }
+
+.profiledescription {
     font-size: 0.85rem; 
     margin-bottom: 15px;
     border-right: none; 
-}
+  }
 
-.profileButtons {
+
+.profile_buttons {
     gap: 10px;
 }
 
 .menu{
     gap: 8px;
 }
+
 
 .menu button{
     width: 42%; 
@@ -524,6 +588,7 @@ body {
     padding: 6px;
     
 }
+
 
 .menu button img{
     width: 24px;
@@ -536,16 +601,18 @@ body {
     font-size: 0.8em;
 }
 
+
 .socials img,
 .download{
     width: 40px;
     height: 40px;
 }
 
-.form{
+  .form{
     width: 100%;
     padding: 10px;
 }
+
 
   .form input,
   .form textarea{
@@ -553,49 +620,63 @@ body {
     padding: 8px;
 }
 
+
+
   .form button[type="submit"]{
     font-size: 0.8em;
-    padding: 8px 12px;
+      padding: 8px 12px;
+
 }
 }
 
 .socials img:hover{
-  animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
 }
+
+
 .download:hover{
   animation: pulse 1s infinite;
 }
 
 
+
 .wave-container{
-  position: fixed;
+   position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
+   left: 0;
+   width: 100%;
   height: 100px;
   overflow: hidden;
   z-index: -1; 
 }
 
+
+
+
+
 .wave{
   position: absolute;
-  width: 200%;
-  height: 100%;
-  background: url('images/wave.png') repeat-x; 
+   width: 200%;
+   height: 100%;
+   background: url('images/wave.png') repeat-x; 
   background-size: 50% 100px;
 }
 
+
 .wave1{
   animation: waveMove 20s linear infinite alternate;
-  opacity: 0.6;
+   opacity: 0.6;
 }
 
+
+
 .wave2{
-  animation: waveMove 15s linear infinite alternate;
+   animation: waveMove 15s linear infinite alternate;
   opacity: 0.4;
 }
 
+
 @keyframes waveMove {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+   from { transform: translateX(0); }
+   to   { transform: translateX(-50%); }
 }

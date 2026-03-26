@@ -2,32 +2,32 @@ const body = document.body;
 const nightButton = document.getElementById('night');
 const dayButton = document.getElementById('day');
 
-
-function toggleMode(isDark) {
-  if (isDark) {
-    body.classList.add('dark-mode');
+//pang toggle sa night mode
+function toggle(darkmode) {
+  if (darkmode) {
+    body.classList.add('gabi');
     nightButton.style.display = 'none';
     dayButton.style.display = 'block';
   } else {
-    body.classList.remove('dark-mode');
+    body.classList.remove('gabi');
     nightButton.style.display = 'block';
     dayButton.style.display = 'none';
   }
 }
 
-
-toggleMode(false);
+//para naka default sa light mode
+toggle(false);
 
 nightButton.addEventListener('click', (e) => {
   e.preventDefault();
-  toggleMode(true);
+  toggle(true);
 });
 
 dayButton.addEventListener('click', () => {
-  toggleMode(false);
+  toggle(false);
 });
 
-
+//para ma close nung button
 document.querySelectorAll('.menu button').forEach(btn => {
   btn.addEventListener('click', () => {
     const targetId = btn.getAttribute('data-target');
